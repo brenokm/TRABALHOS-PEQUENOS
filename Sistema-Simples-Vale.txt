@@ -1,0 +1,203 @@
+programa
+{
+	inclua biblioteca Util
+   
+      cadeia user, senha, colocar
+	
+	                               funcao inicio()
+{
+		escreva("digite seu login: ")
+		leia(user)
+
+		escreva("digite sua senha: ")
+          leia(senha)
+          
+		se( user == "adm"  e senha == "senai"){
+		escreva("BEM VINDO\n")	
+           menu()
+		}	
+
+
+		senao{
+			escreva("Usuario ou senha incorretos \n" )
+			inicio()
+		}
+	
+		
+}
+
+                                    
+                                   funcao menu()
+{
+      escreva("---------MENU----------")
+      escreva("1)Ponto eletronico")
+      escreva("2)gerencia")
+      escreva("3)relatorio")
+      escreva("4)cadastro de funcionario")
+      escreva("5)setores")
+      escreva("6)sair do menu")
+      leia(opcao)
+      escolha(opcao){
+
+      caso 1:
+      pontoE()
+      pare
+
+      
+      caso 2:
+      gerencia()
+      pare
+
+      
+      caso 3:
+      relatorio()
+      pare
+
+      caso 4:
+      CDE()
+      pare
+
+      
+      caso 5:
+      setor()
+      pare
+
+      
+      caso 6:
+      fim()
+      pare
+      	
+}
+
+   funcao pontoE()
+{
+
+        escreva("insira seu dedo para bater o ponto")
+        leia(colocar)
+
+        inteiro tempo_i=1, tempo_f=3
+		
+		escreva("escaneando")
+		enquanto (tempo_i<=tempo_f){
+			limpa()
+			escreva (tempo_i)
+			Util.aguarde(500)
+			tempo_i++
+		}
+		menu()
+}                           
+
+                    funcao relatorio()
+{
+         escreva("----------relatorios-----------") 
+         escreva("1)numero de funcionarios")
+         escreva("2)numero de funcionarios com atestado")
+         leia(opc)
+
+         se(opc == "1"){
+         	escreva("o numero de funcionarios trabalhando hoje é"NUMERO ALEATORIO ".")
+         }
+
+
+         senao se(opc == "2"){
+         	escreva("o numero de funcionarios com atestado hoje é"NUMERO ALEATORIO".")
+         }
+
+         
+
+         caso contrario {
+               escreva("opção invaliada, selecione novamente")
+               relatorio()
+         }
+}                              
+
+                  funcao CDE(){
+
+         escreva("digite seu nome completo")
+         leia(nome)
+
+         escreva("digite sua data de nascimento")
+         leia(data)
+
+         escreva("digite seu CPF")
+         leia(cpf)
+
+         escreva("digite seu cargo dentro da empresa")
+         leia(cargo)
+         
+         escreva("Os seus dados estão corretos?(SIM OU NAO)")       
+         escreva("nome:",nome".")
+         escreva("data de nascimento:",data".")
+         escreva("cpf:",cpf".")
+         escreva("cargo:",cargo".")
+         leia(cas)
+         
+         se(cas == "sim"){
+         	escreva("SEJA BEM VINDO(A) à nossa empresa", nome"." )
+         	menu()
+         }
+         
+         senao {
+         	escreva("deseja corrigir o erro ou abandonar o cadastro?(escolha 1 ou 2 respectivamente) ")
+         	leia(escolhas)
+         	se(escolhas == "1"){
+             CDE()
+         	}
+
+          senao{
+           menu()
+          }
+
+         
+         	
+         }
+         
+         
+	
+                              	
+}
+
+
+              funcao setor()
+{
+              escreva("1)Escolhao setor.\n")
+              escreva("2)Setor administrativo.\n")
+              escreva("3)Setor financeiro.\n")
+              escreva("4)Setor comercial.\n")
+              escreva("5)Setor operacional.\n")
+              leia(opcaoset)
+
+               escolha(opcaoset){
+
+               caso 1:
+               pare
+
+               caso 2:
+               pare
+
+               caso 3:
+               pare
+
+               caso 4:
+               pare
+
+               caso 5:
+               pare
+               
+            
+               }	
+}
+
+
+
+
+
+
+
+            funcao fim(){
+            	escreva("Obrigado, tenha um bom dia")
+            }
+
+
+	
+}

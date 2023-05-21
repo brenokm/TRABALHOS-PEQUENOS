@@ -1,0 +1,188 @@
+programa
+{
+    cadeia matriz[][]= {{"243","Pedro","2800.00","28%","5h"},
+	                      {"034","miguel","4820.00","24%","5h"},
+	                      {"373","julio","574.00","10%","3h"},
+	                      {"473","ronaldo","1820.00","5%","1h"},
+	                      {"321","antonio","3200.00","12%","2h"}}
+	
+	funcao inicio()
+	{
+	   
+	   
+	   inteiro 
+
+
+
+	   escreva("-------MENU-------")
+	   escreva("1) Procurar dados de um funcionario: ")
+        escreva("2) Ordenar tabela por ordem alfabetica: ")
+        escreva("3) realizar calculo de salario de um funcionario : ")
+	   
+        leia(opc)
+
+        escolha(opc){
+
+        caso 1: caso1()
+        
+        pare
+        
+        caso 2:
+        pare
+        
+        caso 3:caso3
+        pare
+        
+        caso 4:
+        pare
+        
+        caso 5:
+        pare
+
+
+        	
+        }
+	}
+
+        funcao caso1(){
+
+        
+        escreva("escreva o nome ou ID do funcionario desejado")
+        leia(funcdesejad)
+        se ((funcdesejad == "243") ou(funcdesejad == "Pedro" ) ou (funcdesejad == "pedro" )){
+        escreva(matriz[1][i])	
+        }
+        	
+        
+
+        senao se ((funcdesejad == "034") ou(funcdesejad == "Miguel" )ou (funcdesejad == "miguel" )){
+        	escreva(matriz[2][i])	
+        	
+        }
+
+        senao se ((funcdesejad == "373") ou(funcdesejad == "Julio" )ou(funcdesejad == "julio" )){
+        	escreva(matriz[3][i])	
+        }
+
+        senao se ((funcdesejad == "473") ou(funcdesejad == "Ronaldo" ) ou (funcdesejad == "ronaldo" )){
+        	escreva(matriz[4][i])	
+        }
+
+        senao se ((funcdesejad == "321") ou(funcdesejad == "Antonio" )ou (funcdesejad == "antonio" )){
+        	escreva(matriz[5][i])	
+        }
+
+        senao{escreva("nome ou ID incorredo, deseja retornar ao menu?")
+              leia(SN)
+
+              se((SN == "s") ou (SN == "S")){
+              	 escreva("...")
+              	 inicio()
+              	 limpa()
+              	   
+              }
+              senao{
+              	escreva("...")
+              	caso1()
+              	}
+           }
+        }
+
+
+       funcao caso3() {  
+
+          
+        escreva("escreva o nome ou ID do funcionario desejado")
+        leia(funcdesejad)
+        se ((funcdesejad == "243") ou(funcdesejad == "Pedro" ) ou (funcdesejad == "pedro" )){
+            
+            escreva("1) salario do funcionario sem adicional de horas extras:")		
+            escreva("1) numero de horas extras cumpridas pelo funcionario")
+            escreva("1) valor da hora do funcionario")
+            escreva("1) comissao do funcionario em reais")	
+            escreva("1) salario do funcionario com horas extras")
+            leia(cass13)
+        	
+        	
+        	
+        
+        	
+        }
+
+        senao se ((funcdesejad == "034") ou(funcdesejad == "Miguel" )ou (funcdesejad == "miguel" )){
+        	escreva(matriz[2][i])	
+
+        	escreva("1) salario do funcionario sem adicional de horas extras:")		
+            escreva("1) numero de horas extras cumpridas pelo funcionario")
+            escreva("2) valor da hora do funcionario")
+            escreva("3) comissao do funcionario em reais")	
+            escreva("4) salario do funcionario com horas extras")
+            leia(cass23)
+
+            escolha (cass23){
+            	caso 1:
+            	pare
+            	caso 2:
+            	pare
+            	caso 3:
+            	pare
+            	caso 4:
+            	pare
+            }
+        }
+
+        senao se ((funcdesejad == "373") ou(funcdesejad == "Julio" )ou(funcdesejad == "julio" )){
+        	escreva(matriz[3][i])
+
+        	escreva("1) salario do funcionario sem adicional de horas extras:")		
+            escreva("1) numero de horas extras cumpridas pelo funcionario")
+            escreva("1) valor da hora do funcionario")
+            escreva("1) comissao do funcionario em reais")	
+            escreva("1) salario do funcionario com horas extras")
+            leia(cass33)	
+
+            escolha(cass33){
+            	
+            }
+        }
+
+        senao se ((funcdesejad == "473") ou(funcdesejad == "Ronaldo" ) ou (funcdesejad == "ronaldo" )){
+        	escreva(matriz[4][i])
+
+        	escreva("1) salario do funcionario sem adicional de horas extras:")		
+            escreva("1) numero de horas extras cumpridas pelo funcionario")
+            escreva("1) valor da hora do funcionario")
+            escreva("1) comissao do funcionario em reais")	
+            escreva("1) salario do funcionario com horas extras")
+            leia(cass43)	
+        }
+
+        senao se ((funcdesejad == "321") ou(funcdesejad == "Antonio")ou (funcdesejad == "antonio" )){
+        	escreva(matriz[5][i])	
+
+        	  escreva("1) salario do funcionario sem adicional de horas extras:")		
+            escreva("1) numero de horas extras cumpridas pelo funcionario")
+            escreva("1) valor da hora do funcionario")
+            escreva("1) comissao do funcionario em reais")	
+            escreva("1) salario do funcionario com horas extras")
+            leia(cass53)
+        }
+
+        senao{escreva("nome ou ID incorredo, deseja retornar ao menu?")
+              leia(SN)
+         se((SN == "s") ou (SN == "S")){
+              	 escreva("...")
+              	 inicio()
+              	 limpa()
+              	   
+              }
+              senao{
+              	escreva("...")
+              	caso1()
+              	}
+        
+         
+	   
+	}
+}
+}
